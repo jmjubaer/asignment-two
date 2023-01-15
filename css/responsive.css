@@ -139,6 +139,12 @@
         font-size: 18px;
         border-radius: 8px;
     }
+    .sponsors_container {
+        gap: 50px;
+    }
+    .sponsors_container a {
+        width: 100%;
+    }
 }
 @media screen and (max-width:380px) {
     .sponsors_container a {
