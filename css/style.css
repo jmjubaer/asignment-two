@@ -1,0 +1,300 @@
+/* ====================common css============= */
+:root{
+    --primary-color:#FF900E;
+    --primary-text-color:#131313;
+    --secondary-text-color:#727272;
+    --third-color:#424242;  
+    --bg-color:rgba(255, 143, 14, 0.10);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    color: var(--primary-text-color);
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+p{
+    color: var(--secondary-text-color);
+}
+h2{
+    font-size: 45px;
+    font-weight: 700;
+}
+.btn{
+    border: 0;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 20px 25px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-top: 32px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 2px solid var(--primary-color);
+}
+.btn:hover{
+    background: #fff;
+    color: var(--primary-text-color);
+}
+
+.container{
+    width: 1200px;
+    max-width: 98%;
+    margin: auto;
+}
+/* ===================navigation area============== */
+header{
+    background: var(--bg-color);
+    padding: 50px 0 42px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo a{
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--primary-text-color);
+    line-height: 26px;
+}
+.menu{
+    display: flex;
+    list-style: none;
+}
+.menu li{
+    margin-left: 70px;
+}
+.menu li:first-child{
+    margin-left: 0px;
+}
+.menu a{
+    color: var(--third-color);
+    font-size: 18px;
+    font-weight: 500;
+}
+.mobile_menu{
+    display: none;
+}
+/* =======================Banner area======================== */
+.banner_area{
+    text-align: center;
+}
+.banner_text{
+    margin:100px auto 50px;
+}
+.banner_text h1{
+    font-size: 64px;
+}
+.banner_text p{
+    width: 70%;
+    line-height: 26px;
+    margin:40px auto 0;
+}
+/* =======================team area================== */
+.team_area{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 50% 45%;
+    align-items: center;
+    grid-gap: 3%;
+}
+.team_img{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-gap: 24px;
+}
+.team_text{
+    width: 90%;
+}
+.team_text h2 span{
+    font-weight: 500;
+    color: var(--secondary-text-color);
+}
+.team_text h2 span.font-color{
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.team_text p{
+    margin-top: 24px;
+    line-height: 26px;
+}
+/* ======================Feature area================ */
+.features_area{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 130px 0;
+}
+.features_area h2{
+    width: 90%;
+    padding-left: 20px;
+    border-left: 5px solid var(--primary-color);
+}
+.features_area p{
+    line-height: 26px;
+}
+.feature_container{
+    margin: 25px 0;  
+}
+.feature_container .child_feature{
+    padding: 30px;
+    box-shadow: 0 0 20px 5px rgba(221, 221, 221, 0.5);
+    margin-top: 20px;
+    border-radius: 8px;
+}
+.feature_container .child_feature h4{
+    font-size: 20px;
+}
+.feature_container .child_feature p{
+    margin-top: 10px;
+}
+.feature_img{
+    position: relative;
+}
+.feature_img p{
+    position: absolute;
+    bottom: -70px;
+    left: -70px;
+    font-size: 64px;
+    font-weight: 700;
+    padding: 45px 42px;
+    width: fit-content;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 8px;
+}
+.feature_img p span{
+    font-size: 25px;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+}
+/* ==================summery area============== */
+.summary_area p.summery_dis{
+    line-height: 26px;
+    width: 50%;
+    margin:24px 0;
+}
+.summary_container{
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.summary_container .child_summary{
+    padding: 45px 30px;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    transition: 0.5s;
+}
+.summary_container .child_summary:hover{
+    background: var(--primary-color);
+    box-shadow: 0 0 20px 5px #ccc;
+    transform: scale(1.2);
+    border-radius: 0px 30px 0px 30px ;
+}
+.summary_container .child_summary:hover img{
+    filter: grayscale(.8);
+}
+.summary_container .child_summary img{
+    margin: auto;
+}
+.summary_container .child_summary span{
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: var(--primary-text-color);
+}
+.summary_container .child_summary p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+/*======================== Sponsors area================ */
+.sponsors_area{
+    text-align: center;
+    margin: 180px 0  130px;
+}
+.sponsors_area p{
+    line-height: 26px;
+    width: 50%;
+    margin:24px auto 0;
+}
+.sponsors_container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.sponsors_container a{
+    width: 20%;
+}
+.sponsors_container img{
+    filter: grayscale(1);
+}
+.sponsors_container a:hover img{
+    filter: grayscale(0);
+}
+/*============= Contact area =================*/
+.contuct_area{
+    text-align: center;
+    padding: 50px 0;
+    background:rgba(255, 143, 14, 0.5);
+    border-radius: 20px;
+}
+.contuct_area p{
+    line-height: 26px;
+    width: 50%;
+    margin:24px auto 0;
+}
+.contuct_area form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin:50px auto 0;
+}
+.contuct_area form input ,textarea{
+    font-size: 18px;
+    width: 49%;
+    padding: 20px;
+    margin-top: 30px;
+    outline: none;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px  ;
+}
+.contuct_area form input[type="button"]{
+    width: fit-content ;
+    margin:30px auto 0;
+}
+.contuct_area form textarea{
+    width: 100%;
+    height: 200px;
+    resize: none;
+
+}
+/* =====================Footer Area==================== */
+footer{
+    background: var(--bg-color);
+    margin: 130px auto;
+    text-align: center;
+    padding: 38px;
+    font-size: 20px;
+    border-radius: 8px;
+}
